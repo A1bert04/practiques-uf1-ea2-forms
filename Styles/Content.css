@@ -1,0 +1,118 @@
+/* Estilos del contenido de la web en si, de los articulos */
+
+div.content {
+    display: flex;
+    padding-top: 3rem;
+
+}
+
+h1.target-element {
+    padding-top: 1rem;
+}
+
+h1.target-element#first-title {
+    padding-top: 0rem;
+}
+
+div.web-chapter {
+    padding-left: 27em;
+    padding-right: 5rem;
+    padding-top: 1.5rem;
+    width: 60%;
+}
+
+div.web-chapter h1 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 2.5rem;
+}
+
+div.web-chapter h2 {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+}
+
+div.web-chapter p {
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+div.web-chapter li {
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+div.web-chapter div.img {
+    text-align: center;
+}
+
+div.web-chapter div.code {
+    font-size: 1rem;
+    padding-left: 2%;
+    border-left: 1px solid rgb(174, 49, 0);
+}
+
+code span.html-tag {
+    color: rgb(174, 49, 0);
+    margin: 0;
+    padding: 0;
+}
+
+div.prac {
+    padding-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.prac a {
+    background-color: rgb(174, 49, 0);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.prac a:hover {
+    background-color: rgb(174, 49, 0, 0.7);
+}
+
+.practica-content {
+    padding-top: 5rem;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid rgb(174, 49, 0);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+tr,
+td {
+    border: 1px solid rgb(174, 49, 0);
+}
+
+iframe {
+    border: 0;
+}
+
+/* COMPROBADO: JUEVES 13-10 */

@@ -1,0 +1,45 @@
+/* Estilos del pie de pagina */
+
+footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    border-top: .5px solid gray;
+}
+
+div.final {
+    color: gray;
+}
+
+div#with-love {
+    padding-top: 1rem;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+span.heart {
+    color: red;
+}
+
+footer a {
+    text-decoration: underline;
+    color: gray;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+span.top-arrow {
+    font-size: 1.3rem;
+    color: gray;
+    cursor: pointer;
+}
+
+/* COMPROBADO: JUEVES 13-10 */

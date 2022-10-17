@@ -1,0 +1,19 @@
+/* Estilos generales de toda la web */
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: white;
+    color: black;
+}
+
+::selection {
+    background-color: #d2d0d0;
+    color: black;
+}
+
+::-webkit-progress-bar {
+    background-color: white;
+}
+
+/* COMPROBADO: JUEVES 13-10 */

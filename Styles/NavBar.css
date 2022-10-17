@@ -1,0 +1,67 @@
+/* Estilos de la barra de navegacion */
+
+header {
+    width: 100%;
+    position: fixed;
+    opacity: 0.7;
+}
+
+nav {
+    height: 3vh;
+    background-color: black;
+    color: black;
+    padding: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    display: flex;
+    align-items: center;
+    display: flex;
+
+}
+
+.nav-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+#NavPractiques {
+    color: white;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+#author {
+    padding-left: 1rem;
+    color: whitesmoke;
+}
+
+.nav-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.backtoindex {
+    background-color: rgb(174, 49, 0);
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-size: .8rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.backtoindex:hover {
+    background-color: rgb(174, 49, 0, 0.7);
+}
+
+/* COMPROBADO: JUEVES 13-10 */
