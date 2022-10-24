@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>NOM PRACTICA</title>
+    <title>Elementos basicos</title>
     <link rel="stylesheet" href="../../Styles/General.css">
     <link rel="stylesheet" href="../../Styles/NavBar.css">
     <link rel="stylesheet" href="../../Styles/LeftIndex.css">
@@ -25,9 +25,31 @@
     </header>
     <div class="practica-content">
 
-        <h1></h1>
-        
-        HOLA!
+        <h1>8.2 - 8.11 - Elementos básicos </h1>
+
+        <form action="./form.php" method="get">
+            <b>Nombre</b> <br>
+            <input type="text" name="nombre" />
+            <br>
+            <b>Contraseña</b> <br />
+            <input type="password" name="contrasena" value="" />
+            <br>
+            Puestos de trabajo buscados <br />
+            <input name="puesto_directivo" type="checkbox" value="direccion" /> Dirección <br>
+            <input name="puesto_tecnico" type="checkbox" value="tecnico" /> Técnico <br>
+            <input name="puesto_empleado" type="checkbox" value="empleado" /> Empleado <br>
+            <b>Sexo</b> <br />
+            <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+            <input type="radio" name="sexo" value="mujer" /> Mujer <br>
+            <input type="submit" name="buscar" value="Buscar" /> <br>
+            <input type="reset" name="limpiar" value="Borrar datos del formulario" /> <br>
+            <b>Fichero adjunto</b> <br>
+            <input type="file" name="adjunto" /> <br>
+            <input type="image" name="enviar" src="accept.png" /> <br>
+            <input type="button" name="guardar" value="Guardar Cambios" />
+
+            <input type="submit" value="Enviar" />
+        </form>
 
     </div>
     <footer class="">

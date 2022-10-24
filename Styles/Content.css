@@ -115,4 +115,9 @@ iframe {
     border: 0;
 }
 
+input {
+    padding: .5rem;
+    margin: .8rem;
+}
+
 /* COMPROBADO: JUEVES 13-10 */
