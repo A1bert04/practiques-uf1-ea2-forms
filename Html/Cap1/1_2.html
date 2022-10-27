@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario básico</title>
+    <link rel="stylesheet" href="../../Styles/General.css">
+    <link rel="stylesheet" href="../../Styles/NavBar.css">
+    <link rel="stylesheet" href="../../Styles/LeftIndex.css">
+    <link rel="stylesheet" href="../../Styles/Content.css">
+    <link rel="stylesheet" href="../../Styles/Footer.css">
+    <link rel="stylesheet" href="../../Styles/Forms.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div id="NavPractiques">PRÀCTIQUES UF1 EA2</div>
+                <h3 id="author">Albert Bru</h3>
+            </div>
+            <div class="nav-right">
+                <a href="../../Index_DocTreballForm.html" class="backtoindex">Volver al índice</a>
+            </div>
+        </nav>
+    </header>
+    <div class="practica-content">
+
+        <h1>Formulario de registro</h1>
+
+        <div class="divForm">
+            <form action="./form.php" method="get">
+                <h2>Nombre de usuario</h2>
+                <input type="text" name="nombre" />
+                <h2>E-mail</h2>
+                <input type="text" name="nombre" placeholder="pepito123@dominio.es" />
+                <br>
+                <h2>Contraseña</h2>
+                <input type="password" name="contrasena" placeholder="Contraseña" />
+                <input type="password" name="contrasena" placeholder="Confirmar contraseña" />
+                <br>
+                <h2>Sexo</h2>
+                <input type="radio" name="sexo" value="hombre" checked="checked" /> Hombre
+                <input type="radio" name="sexo" value="mujer" style="margin-left: 1rem;"/> Mujer <br>
+                <h2>Foto</h2>
+                <input type="file" name="fichero" />
+                <div class="submitButton">
+                    <input type="button" name="guardar" value="Guardar Cambios" />
+                    <input type="submit" value="Enviar" />
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <footer class="">
+        <div class="final">
+            Parece que has llegado al final... <a id="footer-backtotop" href="#backtotop">Volver arriba<span
+                    class="top-arrow">↑</span> </a>
+        </div>
+        <div id="with-love">
+            With <span class="heart">♥</span> by Albert | <a href="https://github.com/A1bert04/practiques-uf1">Ver
+                código fuente</a>
+        </div>
+    </footer>
+    <script src="../../JS/StylesOnLoad.js"></script>
+    <script src="../../JS/LeftIndex.js" defer></script>
+    <script src="../../JS/BackToTop.js"></script>
+    <script src="../../JS/ToStart.js"></script>
+    <script src="../../JS/ToEnd.js"></script>
+
+</body>
+
+</html>
