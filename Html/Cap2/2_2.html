@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario avanzado</title>
+    <link rel="stylesheet" href="../../Styles/General.css">
+    <link rel="stylesheet" href="../../Styles/NavBar.css">
+    <link rel="stylesheet" href="../../Styles/LeftIndex.css">
+    <link rel="stylesheet" href="../../Styles/Content.css">
+    <link rel="stylesheet" href="../../Styles/Footer.css">
+    <link rel="stylesheet" href="../../Styles/Forms.css">
+    <link rel="shortcut icon" href="./icono.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div id="NavPractiques">PRÀCTIQUES UF1 EA2</div>
+                <h3 id="author">Albert Bru</h3>
+            </div>
+            <div class="nav-right">
+                <a href="../../Index_DocTreballForm.html" class="backtoindex">Volver al índice</a>
+            </div>
+        </nav>
+    </header>
+    <div class="practica-content">
+
+        <h1>Hoja de reclamaciones
+            <img src="./icono.png" alt="Logo" height="25">
+            Agencia Tributaria
+        </h1>
+
+        <div class="divForm">
+            <form action="./form.php" method="get">
+                <fieldset>
+                    <legend>Identificación</legend>
+                    <h2>Nombre y apellidos</h2>
+                    <input type="text" name="name" placeholder="Nombre"> <br>
+                    <input type="text" name="firstSurname" placeholder="Apellido 1">
+                    <input type="text" name="secondSurname" placeholder="Apellido 2">
+                    <h2>NIF/NIE</h2>
+                    <input type="text" name="nif" placeholder="DNI" maxlength="9">
+                    <span>
+                        Fecha de expedición:
+                    </span>
+                    <input type="date" name="fechexpdni">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dirección</legend>
+                    <h2>Domicilio</h2>
+                    <select name="via">
+                        <option value="" selected="selected">- tipo de via -</option>
+                        <option value="calle">Calle</option>
+                        <option value="avenida">Avenida</option>
+                        <option value="paseo">Paseo</option>
+                        <option value="travesia">Travesia</option>
+                        <option value="camino">Camino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <input type="text" name="direction" placeholder="nombre"> <br>
+                    <input type="text" name="directionNum" placeholder="numero">
+                    <input type="text" name="directionNum2" placeholder="piso y puerta"> <br>
+                    <h2>Municipio</h2>
+                    <input type="text" name="town" placeholder="municipio">
+                    <input type="number" name="cp" placeholder="codigo postal">
+                    <select name="provincia">
+                        <option value="" selected="selected">- provincia -</option>
+                        <optgroup label="Catalunya">
+                            <option value="barcelona">Barcelona</option>
+                            <option value="girona">Girona</option>
+                            <option value="lleida">Lleida</option>
+                            <option value="tarragona">Tarragona</option>
+                        </optgroup>
+                        <optgroup label="Comunidad Valenciana">
+                            <option value="alicante">Alicante</option>
+                            <option value="castellon">Castellón</option>
+                            <option value="valencia">Valencia</option>
+                        </optgroup>
+                        <optgroup label="Extremadura">
+                            <option value="badajoz">Badajoz</option>
+                            <option value="caceres">Cáceres</option>
+                        </optgroup>
+                        <optgroup label="Galicia">
+                            <option value="coruna">A Coruña</option>
+                            <option value="lugo">Lugo</option>
+                            <option value="ourense">Ourense</option>
+                            <option value="pontevedra">Pontevedra</option>
+                        </optgroup>
+                        <optgroup label="Islas Baleares">
+                            <option value="baleares">Islas Baleares</option>
+                        </optgroup>
+                        <optgroup label="Comunidad de Madrid">
+                            <option value="madrid">Madrid</option>
+                        </optgroup>
+                        <optgroup label="País Vasco">
+                            <option value="alava">Álava</option>
+                            <option value="guipuzcoa">Guipúzcoa</option>
+                            <option value="vizcaya">Vizcaya</option>
+                        </optgroup>
+                        <optgroup label="Región de Murcia">
+                            <option value="murcia">Murcia</option>
+                        </optgroup>
+                        <optgroup label="Comunidad Foral de Navarra">
+                            <option value="navarra">Navarra</option>
+                        </optgroup>
+                        <optgroup label="Principado de Asturias">
+                            <option value="asturias">Asturias</option>
+                        </optgroup>
+                        <optgroup label="Cantabria">
+                            <option value="cantabria">Cantabria</option>
+                        </optgroup>
+                        <optgroup label="Región de Aragón">
+                            <option value="huesca">Huesca</option>
+                            <option value="zaragoza">Zaragoza</option>
+                            <option value="teruel">Teruel</option>
+                        </optgroup>
+                        <optgroup label="Región de Castilla y León">
+                            <option value="avila">Ávila</option>
+                            <option value="burgos">Burgos</option>
+                            <option value="leon">León</option>
+                            <option value="palencia">Palencia</option>
+                            <option value="salamanca">Salamanca</option>
+                            <option value="segovia">Segovia</option>
+                            <option value="soria">Soria</option>
+                            <option value="valladolid">Valladolid</option>
+                            <option value="zamora">Zamora</option>
+                        </optgroup>
+                        <optgroup label="Región de Castilla y la Mancha">
+                            <option value="albacete">Albacete</option>
+                            <option value="ciudadreal">Ciudad Real</option>
+                            <option value="cuenca">Cuenca</option>
+                            <option value="guadalajara">Guadalajara</option>
+                            <option value="toledo">Toledo</option>
+                        </optgroup>
+                        <optgroup label="Otros">
+                            <option value="ceuta">Ceuta</option>
+                            <option value="melilla">Melilla</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Descripción de la reclamación</legend>
+                    <h2>Expsición de los hechos</h2> <br>
+                    Expongo: <br>
+                    <textarea name="reclamacion" cols="50"></textarea> <br> <br>
+                    Y, por lo tanto, solicito: <br>
+                    <textarea name="solicitud" cols="50"></textarea> <br> <br>
+                    <h2>Ficheros adjuntos</h2> <br>
+                    Se le permite subir varios ficheros en formato comprimido (max 2GB)
+                    <input type="file" name="fichero1">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Confirmación</legend>
+                    <input type="checkbox" name="privacy" value="confirmacion"> Acepto la <a
+                        href="http://www.google.com">política de privacidad</a> <br>
+                    <input type="checkbox" name="confirmacion" value="confirmacion"> Acepto las <a
+                        href="http://www.google.com">condiciones de uso</a> <br>
+                    <input type="checkbox" name="confirmacion" value="confirmacion"> Acepto la <a
+                        href="http://www.google.com">política de cookies</a> <br>
+                    <input type="checkbox" name="confirmacion" value="confirmacion"> Acepto la <a
+                        href="http://www.google.com">política de protección de datos</a> <br>
+
+
+                </fieldset>
+
+                <div class="submitButton">
+                    <input type="button" name="guardar" value="Guardar Cambios">
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <footer class="">
+        <div class="final">
+            Parece que has llegado al final... <a id="footer-backtotop" href="#backtotop">Volver arriba<span
+                    class="top-arrow">↑</span> </a>
+        </div>
+        <div id="with-love">
+            With <span class="heart">♥</span> by Albert | <a
+                href="https://github.com/A1bert04/practiques-uf1-ea2-forms">Ver
+                código fuente</a>
+        </div>
+    </footer>
+    <script src="../../JS/StylesOnLoad.js"></script>
+    <script src="../../JS/LeftIndex.js" defer></script>
+    <script src="../../JS/BackToTop.js"></script>
+    <script src="../../JS/ToStart.js"></script>
+    <script src="../../JS/ToEnd.js"></script>
+
+</body>
+
+</html>

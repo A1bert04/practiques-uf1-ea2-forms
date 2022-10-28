@@ -30,7 +30,12 @@
                             <li class="result">
                                 <a href="#P1/2" class="index-el">P2 - Ejercicio formulario simple</a>
                             </li>
-
+                            <li class="result">
+                                <a href="#P2/1" class="index-el">P1 - Elementos avanzados (8.13 - 8.16)</a>
+                            </li>
+                            <li class="result">
+                                <a href="#P2/2" class="index-el">P2 - Ejercicio formulario avanzado</a>
+                            </li>
                             <li id="write-more">
                                 Intenta ser más concreto (+3)
                             </li>
@@ -46,7 +51,7 @@
             <h1 id="titulo-indice">
                 Contenidos
             </h1>
-            <details id="index-chapter-2">
+            <details id="index-chapter-1">
                 <summary class="index-chapter-expandable scroll-onclick">
                     <a href="#Titulo1" class="index-chapter">C1 - Formularios básicos</a>
                 </summary>
@@ -56,7 +61,17 @@
                 <div class="index-el scroll-onclick">
                     <a href="#P1/2" class="index-el">P2 - Ejercicio formulario simple</a>
                 </div>
-
+            </details>
+            <details id="index-chapter-2">
+                <summary class="index-chapter-expandable scroll-onclick">
+                    <a href="#Titulo1" class="index-chapter">C2 - Formularios avanzados</a>
+                </summary>
+                <div class="index-el scroll-onclick">
+                    <a href="#P2/1" class="index-el">P1 - Elementos avanzados (8.13 - 8.16)</a>
+                </div>
+                <div class="index-chapter index-el">
+                    <a href="#P2/2" class="index-el">P2 - Ejercicio formulario avanzado</a>
+                </div>
             </details>
 
             <div class="index-el" id="index-end">
@@ -72,32 +87,21 @@
                     <code>&lt;input&gt;</code>.
                 </p>
                 <p>
-                    El elemento <code>&lt;form&gt;</code> es el contenedor de los elementos de formulario. Los elementos
-                    de formulario son elementos que permiten al usuario introducir datos que serán enviados al servidor
-                    para su procesamiento.
-                </p>
-                <p>
-                    El elemento <code>&lt;input&gt;</code> es el elemento que permite al usuario introducir datos. El
-                    elemento <code>&lt;input&gt;</code> tiene un atributo <code>type</code> que indica el tipo de datos
-                    que
-                    se espera que el usuario introduzca. El atributo <code>type</code> puede tener los siguientes
-                    valores:
+                    En la etiqueta input podemos usar el atributo type con los siguientes valores para decir de que tipo
+                    es el dato a introducir:
                 </p>
                 <ul>
-                    <li><code>text</code></li>
-                    <li><code>password</code></li>
-                    <li><code>checkbox</code></li>
-                    <li><code>radio</code></li>
-                    <li><code>file</code></li>
-                    <li><code>submit</code></li>
+                    <li>Text: Para introducir texto</li>
+                    <li>Password: Para contraseñas (se muestran con puntos)</li>
+                    <li>Checkbox: Para marcar una casilla</li>
+                    <li>Radio: Para marcar una casilla de un grupo de opciones</li>
+                    <li>Submit: Para enviar el formulario</li>
+                    <li>Reset: Para borrar el formulario</li>
+                    <li>Button: Para crear un botón</li>
+                    <li>Hidden: Para crear un campo oculto</li>
+                    <li>Image: Para crear un botón con una imagen</li>
+                    <li>File: Para subir archivos</li>
                 </ul>
-                <p>
-                    El elemento <code>&lt;input&gt;</code> también puede tener un atributo <code>name</code> que indica
-                    el nombre que se le asigna al dato introducido por el usuario.
-                </p>
-                <p>
-                    En esta práctica vamos a probar todos los inputs existentes.
-                </p>
                 <div class="prac">
                     <a href="./Html/Cap1/1_1.html">Ver práctica</a>
                 </div>
@@ -105,11 +109,10 @@
                     Conocimientos adquiridos con esta práctica:
                 </p>
                 <ul>
-                    <li>Funcionamiento de las etiquetas</li>
-                    <li>Etiquetas html, head, body, title, strong y p</li>
+                    <li>Crear formularios en HTML</li>
+                    <li>Distintos tipos de campo en los formularios HTML</li>
                     <li>Distinción entre el head y el body de un documento HTML</li>
                 </ul>
-
             </article>
             <article>
                 <h2 class="target-element">Práctica 2 - Ejercicio formulario simple</h2>
@@ -118,14 +121,69 @@
                     Decideix sobre què tematica vols demanar o recollir informació i Crea un FORMULARI on apareguin tots
                     els camps que s'han treballat en els exemples (Text, password, checkbox, radiobutton, enviament,
                     reset, fitxer adjunt, camp ocult, desar canvis, camp imatge) i justifica les decisions.
-
                 </p>
 
                 <div class="prac">
                     <a href="./Html/Cap1/1_2.html">Ver práctica</a>
                 </div>
             </article>
+            <h1 class="target-element" id="second-title">Capítulo 2: Formularios avanzados</h1>
+            <article>
+                <h2 class="target-element">Práctica 1 - Elementos avanzados (8.13 - 8.16)</h2>
+                <p>
+                    Con la etiqueta fieldset podemos agrupar campos en un formulario.
+                    Estos campos agrupados podemos darles un título con la etiqueta legend.
+                </p>
+                <p>
+                    Por otro lado, tambien existe el textarea, que actua como input pero tiene su propia etiqueta.
+                    El textarea permite introducir texto de varias lineas.
+                </p>
+                <p>
+                    La etiqueta select permite crear un desplegable con opciones.
+                    Hay tres tipos de select:
+                </p>
+                <ul>
+                    <li>
+                        El primero es el de
+                        las listas más utilizadas que sólo muestran un valor cada vez y sólo permiten seleccionar un
+                        valor.
+
+                    </li>
+                    <li>
+                        El segundo tipo de lista es el que sólo permite seleccionar un valor pero muestra varios a la
+                        vez.
+
+                    </li>
+                    <li>
+                        Por último, el tercer tipo de lista desplegable es aquella que muestra varios valores y permite
+                        realizar selecciones múltiples.
+                    </li>
+                </ul>
+                <p>
+                    Para agrupar opciones en un select, se utiliza la etiqueta optgroup.
+
+                </p>
+                <div class="prac">
+                    <a href="./Html/Cap2/2_1.html">Ver práctica</a>
+                </div>
+            </article>
+            <article>
+                <h2 class="target-element">Práctica 2 - Ejercicio formulario avanzado</h2>
+                <p>
+                    El ejercicio a realizar es el siguiente: <br>
+                    Decideix sobre què tematica vols demanar o recollir informació i Crea un FORMULARI on apareguin els
+                    camps que s'han treballat en els exemples (agrupament de camps, caldrà utilitzar l'etiqueta label
+                        per a "vincular" el contingut amb el camp corresponent, Area de text, llistes bàsiques i amb
+                        agrupació). A més, el formulari cal que contingui també el tipus de camps d’un formulari amb
+                        HTML5, com ara el valor màxim i mínim, les dates i hores, el correu
+                        electrònic i els camps numèrics. Justifica les decisions.
+                </p>
+                <div class="prac">
+                    <a href="./Html/Cap2/2_2.html">Ver práctica</a>
+                </div>
+            </article>
         </div>
+        <div class="target-element"></div>
     </div>
 
     <footer class="">
@@ -134,7 +192,8 @@
                     class="top-arrow">↑</span> </a>
         </div>
         <div id="with-love">
-            With <span class="heart">♥</span> by Albert | <a href="https://github.com/A1bert04/practiques-uf1">Ver
+            With <span class="heart">♥</span> by Albert | <a
+                href="https://github.com/A1bert04/practiques-uf1-ea2-forms">Ver
                 código fuente</a>
         </div>
     </footer>
@@ -149,5 +208,3 @@
 </body>
 
 </html>
-
-<!-- COMRPOBADO 13-10 -->
